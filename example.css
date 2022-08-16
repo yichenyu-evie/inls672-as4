@@ -1,0 +1,86 @@
+:root {
+   --primary-color: #5eaaa8;
+   --secondary-color: #F05945;
+}
+html {
+  font-family: verdana, sans-serif;
+}
+section {
+  margin: 0;
+  padding: 0;
+}
+header {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(--secondary-color);
+  margin: 2em;
+  padding-bottom: 1em;
+  border-bottom: var(--secondary-color) solid .07em;
+  text-align: center;
+}
+
+/* Style rules for the selection list and button   */
+#controls { margin-left: 4em; }
+select {
+    font-size: 1em;
+    margin: 0;
+    padding: .313em .625em;
+    border-radius: .438em;
+}
+button {
+    font-size: 1em;
+    color: white;
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: .438em;
+    margin-left: 2em;
+    padding: .313em .938em;
+}
+
+/* Style rules for park list and details  */
+#wrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+#parklist {
+  color: var(--primary-color);
+  margin: 2em;
+}
+h4 {
+  margin-top: 3em;
+}
+ul { list-style: none; }
+li {margin: .6em;}
+a {color: var(--primary-color);
+   font-weight: bold;
+   text-decoration: none;
+}
+a:hover, .parkname:hover {
+   color: var(--secondary-color);
+   font-style: italic;
+ }
+
+ /* Style rules for park details and map  */
+ #details {
+ 	display: flex;
+ 	flex-direction: column;
+ 	align-items: center;
+ }
+.desc {
+    margin: .2em;
+   
+}
+#map {
+   width: 31.25em;
+   height: 23.75em;
+   max-width:100%;
+   margin: 2em 3em;
+}
+
+/* Row orientation for wider screen  */
+@media (min-width: 43.750em) {
+   #wrapper {
+      flex-direction: row;
+   }
+}
